@@ -14,7 +14,7 @@ namespace Seminar1
                 text += $"{id};{numberOfRoute};\n";
             }
 
-            File.WriteAllText("Routes.csv", text);
+            File.WriteAllText("routes.csv", text);
         }
     }
 }
