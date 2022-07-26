@@ -1,12 +1,13 @@
 namespace Seminar1
 {
-    class Staff
+    class Driver
     {
-        public static void FillTableStaff()
+        public static int count = 30;
+
+        public static void FillTableDriver()
         {
             string text = "id;fName;lName;dateOfBirth;ITN;\n";
 
-            int count = 20;
             Random random = new Random();
             for (int id = 1; id <= count; id++)
             {
@@ -16,7 +17,7 @@ namespace Seminar1
                 string itn = $"ITN{id}";
                 text += $"{id};{fName};{lName};{dateOfBirth};{itn};\n";
             }
-            File.WriteAllText("staff.csv", text);
+            File.WriteAllText("driver.csv", text);
         }
     }
 }

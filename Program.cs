@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Staff.FillTableStaff();
+            Driver.FillTableDriver();
+            Conductor.FillTableConductor();
+            Routes.NumbersOfRoutes();
+            Bus.FillTableBus();
         }
     }
 }
